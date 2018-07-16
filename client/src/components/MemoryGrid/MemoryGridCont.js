@@ -3,6 +3,7 @@ import { Container, Row, Col} from 'reactstrap';
 import MemoryGrid from "./MemoryGrid";
 import thumbs from "./MemoryGrid.json";
 
+
 class MemoryGridCont extends Component {
   // Setting this.state.friends to the friends json array
   state = {
@@ -10,7 +11,17 @@ class MemoryGridCont extends Component {
   };
 
   HandleImageClick = () => {
-    alert(`Click Worked`)
+    const shuffle = (deck) => {
+      let randomized = [];
+      let array = deck;
+      while ( array.length !== 0) {
+        let rIndex = Math.floor(array.length * Math.random());
+        randomized.push(array[rIndex]);
+        array.splice(rIndex, 1)
+      }
+      return randomized;
+    };
+   this.setState({ thumbs: shuffle(this.state.thumbs)})
   };
 
 
@@ -19,9 +30,11 @@ class MemoryGridCont extends Component {
     return (
         <Container className="memory d-flex justify-content-center">
         <Row>
-      
+        
           {this.state.thumbs.map(image => (
+
                 <Col lg="3" md="4" xs="6"  className="pb-4">
+          
           <MemoryGrid
             onclick={this.HandleImageClick}
             id={image.id}
@@ -30,7 +43,8 @@ class MemoryGridCont extends Component {
           />
             </Col>
         ))}
-    
+           
+
         </Row>
       </Container>
     );
