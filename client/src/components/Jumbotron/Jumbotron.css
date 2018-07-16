@@ -1,16 +1,10 @@
-.topbar {
-  background-color: #037dc9;
-  color: #ffff;
-  position: fixed;
-    width: 100%;
-    -webkit-box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
-    box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
-    color: #fff;
-    font-size: calc(10px + 14 * (100vw - 320px)/ 800);
-    z-index: 99;
-    white-space: nowrap;
+.jumbo {
+  color: #fff;
+  background: url("https://www.publicdomainpictures.net/pictures/50000/velka/nature-background-31.jpg") center center;
+  background-size: cover;
 }
 
-.midtop {
-  text-align: center;
+.jumbcont {
+padding-top: 4rem !important;
 }
+

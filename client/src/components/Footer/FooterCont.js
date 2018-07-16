@@ -3,7 +3,7 @@ import { Container, Row, Col} from 'reactstrap';
 import "./Footer.css";
 
 
-class NavBar extends Component {
+class Footer extends Component {
   render() {
     return (
       <div>
@@ -19,6 +19,6 @@ class NavBar extends Component {
 
 
 
-export default NavBar;
+export default Footer;
 
 
