@@ -1,14 +1,14 @@
 .memimg:hover {
-  background-size: cover;
-  background-position: 90%;
-  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
-  box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
-  cursor: pointer;
-  -webkit-transform: scale(1.1);
-	transform: scale(1.1);
-	-webkit-transition: .2s ease-in-out;
-	transition: .2s ease-in-out;
+    background-size: cover;
+    background-position: 90%;
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
-.memimg{
-  cursor: pointer;
+.memimg {
+    cursor: pointer;
 }

@@ -1,1 +1,2 @@
-export { default } from "./FooterCont";
+export {default}
+from "./FooterCont";

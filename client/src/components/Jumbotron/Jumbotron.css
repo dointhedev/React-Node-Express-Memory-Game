@@ -1,10 +1,9 @@
 .jumbo {
-  color: #fff;
-  background: url("https://www.publicdomainpictures.net/pictures/50000/velka/nature-background-31.jpg") center center;
-  background-size: cover;
+    color: #fff;
+    background: url("https://www.publicdomainpictures.net/pictures/50000/velka/nature-background-31.jpg") center center;
+    background-size: cover;
 }
 
 .jumbcont {
-padding-top: 4rem !important;
+    padding-top: 4rem !important;
 }
-

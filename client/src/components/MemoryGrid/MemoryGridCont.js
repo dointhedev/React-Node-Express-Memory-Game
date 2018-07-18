@@ -4,7 +4,6 @@ import MemoryGrid from "./MemoryGrid";
 import thumbs from "./MemoryGrid.json";
 
 class MemoryGridCont extends Component {
-    // Setting this.state.friends to the friends json array
     constructor(props) {
         super(props);
 
@@ -34,27 +33,21 @@ class MemoryGridCont extends Component {
             ]
         });
 
-        return this.state.selectedImages;
+        return selectedImages;
     };
 
     HandleImageClick = (e) => {
         // fisher yates shuff
         const ID = e.target.id;
-        const {selectedImages} = this.state;
+        const {selectedImages, thumbs} = this.state;
         selectedImages.includes(ID)
             ? (this.setState({selectedImages: []}), this.props.resetCount(selectedImages))
-            : this.procClick(ID),
-        this
-            .props
-            .increaseCount();
+            : (this.procClick(ID), this.props.increaseCount())
         this.setState({
-            thumbs: this.shuffle(this.state.thumbs)
+            thumbs: this.shuffle(thumbs)
         })
 
     };
-
-    // Map over this.state.friends and render a FriendCard component for each friend
-    // object
     render() {
         const {thumbs} = this.state;
         return (

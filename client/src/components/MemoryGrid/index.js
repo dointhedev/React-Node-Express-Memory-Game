@@ -1,1 +1,2 @@
-export { default } from "./MemoryGridCont";
+export {default}
+from "./MemoryGridCont";

@@ -1,1 +1,2 @@
-export { default } from "./NavBarCont";
+export {default}
+from "./NavBarCont";
